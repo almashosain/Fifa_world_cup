@@ -1,0 +1,68 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  height: 700px;
+  width: 700px;
+  background-color: purple;
+  margin: auto;
+  gap: 20px;
+
+  /***** Using Flex *****/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  /* **** Using Grid ****
+display: grid;
+place-content: center;
+
+/* Using Position and transform 
+position: relative; */
+}
+.box_1 {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(240, 12, 12);
+
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); */
+}
+.box_2 {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(26, 187, 174);
+}
+.flag_green {
+  height: 300px;
+  width: 500px;
+  background-color: green;
+  position: relative;
+}
+.flag_rounded_red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.flag_rounded_white {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 254, 254);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
