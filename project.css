@@ -42,6 +42,13 @@ margin-right: 0;
 }
 .banner_left{
     padding-left: 45px;
+    flex: 1;
+}
+img{
+    max-width: 100%;
+}
+.banner_right {
+    flex: 1;
 }
 .banner_right img {
     display: block;
@@ -71,8 +78,10 @@ height: fit-content;
 
 
 .upcoming_matches_right{
-
+display: grid;
+grid-template-columns: repeat(3,1fr);
 flex: 1;
+gap: 10px;
 }
 .upcoming_matches_right .card{
 border: 1px solid rgb(232,232,232);
@@ -102,4 +111,67 @@ font-weight: 600;
 }
 .card_body{
     padding: 20px;
+}
+
+/* Laptop / Tab */
+@media  (max-width:992px) {
+/* Container */
+ .container{
+    margin: 0 20px;
+}
+.banner h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+
+
+
+    .upcoming_matches{
+        flex-direction: column;
+    }
+    .upcoming_matches_left{
+        flex-direction: row;
+        width: 100%;
+        background-color: transparent;
+    }
+    .upcoming_matches_left > * {
+        flex: 1;
+    }
+    .upcoming_matches_left .btn{
+        border: 1px solid rgb(232, 232, 232);
+    }
+    .upcoming_matches_right {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+/* Container */
+ .container{
+    margin: 0 10px;
+}v
+
+    .banner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner .banner_left {
+        margin-bottom: 50px;
+        padding-left: 0 ;
+        padding-top: 30px;
+    }
+ .banner .banner_left p {
+    margin: 15px auto;
+ 
+}
+.upcoming_matches_left{
+    display: flex;
+    flex-direction: column;
+}
+.upcoming_matches_right{
+  grid-template-columns: 1fr;
+}
 }
