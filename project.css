@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 .container{
     max-width: 1280px;
@@ -23,14 +24,17 @@
     background-color: black;
     color: white;
     border-radius: 15px;
+    margin: 50px auto ;
 }
 .banner_left h2 {
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 70px;
 }
 .banner_left p {
 font-size: 16px;
 color: #FFFFFF;
+max-width: 65%;
 margin-top: 20px;
 margin-bottom: 30px;
 margin-left: 0;
@@ -38,4 +42,64 @@ margin-right: 0;
 }
 .banner_left{
     padding-left: 45px;
+}
+.banner_right img {
+    display: block;
+}
+/* Upcoming matches */
+.upcoming_matches{
+    display: flex;
+  
+    padding: 50px 0;
+    gap: 20px;
+}
+.upcoming_matches_left{
+background-color: black;
+width: 25%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding: 15px;
+border-radius: 15px;
+height: fit-content;
+}
+
+.upcoming_matches_left .btn:nth-child(1) ,
+.upcoming_matches_left .btn:nth-child(2) 
+{ background-color: white;
+    color: black;}
+
+
+.upcoming_matches_right{
+
+flex: 1;
+}
+.upcoming_matches_right .card{
+border: 1px solid rgb(232,232,232);
+border-radius: 10px;
+}
+.upcoming_matches_right .card .btn{
+background-color: white;
+color: black;
+border: 2px solid black;
+pad: 8px 157px;
+margin-top: 10px;
+}
+.upcoming_matches_right img{
+height: 180px;
+width: 100%;
+border-radius: 10px 10px 0 0;
+}
+.upcoming_matches_right .card h2{
+margin: 15px 0;
+font-size: 18px;
+font-weight: 600;
+}
+.card_bottom{
+    display: flex;
+    gap: 10px;
+    color: #161616cc;
+}
+.card_body{
+    padding: 20px;
 }
