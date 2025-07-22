@@ -3,6 +3,26 @@
   margin: 0px;
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px  ;
+  justify-content: center;
+
+}
+nav {
+  background-color: black;
+  padding: 15px 0;
+  font-weight: 600;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: purple;
+  transition: 0.5s;
+}
 .container {
   height: 700px;
   width: 700px;
