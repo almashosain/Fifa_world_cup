@@ -17,6 +17,41 @@
     border: none;
 }
 
+/* Animation */
+@keyframes banner_animation {
+    0%{
+opacity: 0;
+transform: translate(-20px);
+    }
+50%{
+opacity: 0.5;
+transform: translate(-10px);
+}
+100%{
+opacity: 1;
+transform: translate(0px);
+}
+}
+
+/* Animation_player  */
+@keyframes banner_animation_player {
+    0%{
+opacity: 0.5;
+transform: translate(-20px);
+    }
+50%{
+opacity: 0.7;
+transform: translate(-10px);
+}
+100%{
+opacity: 1;
+transform: translate(0px);
+}
+}
+
+
+
+
 /* Custom style */
 .banner{
     display: flex;
@@ -25,6 +60,9 @@
     color: white;
     border-radius: 15px;
     margin: 50px auto ;
+
+animation: banner_animation 0.7s ease-out forwards ;
+
 }
 .banner_left h2 {
     font-size: 70px;
@@ -52,6 +90,7 @@ img{
 }
 .banner_right img {
     display: block;
+    animation: banner_animation_player 1s ease-in infinite;
 }
 /* Upcoming matches */
 .upcoming_matches{
